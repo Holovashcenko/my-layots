@@ -1,102 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flex layot</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flex layot</title>
-  <style>
-    html,
-    body {
-      height: 100%;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-    }
-
-    header {
-      margin: 0 0 10px 0;
-    }
-
-    footer {
-      margin: 10px 0 0 0;
-    }
-
-    article {
-      margin: 0 10px;
-    }
-
-    #pageHeader,
-    #pageFooter {
-      flex: 0 1 auto;
-    }
-
-    #pageHeader {
-      min-height: 6.5%;
-    }
-
-    #pageFooter {
-      min-height: 4.5%;
-    }
-
-    #container {
-      flex: 1 2 auto;
-      display: flex;
-      flex-direction: row;
-    }
-
-    #mainNav,
-    #siteAds {
-      flex: 0 1 auto;
-      min-width: 17%;
-    }
-
-    #mainArticle {
-      flex: 1 2 auto;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header,
-    footer,
-    article,
-    nav,
-    aside {
-      padding: 1.2em;
-      background: gold;
-    }
-
-    @media all and (max-width: 575px) {
       body {
         display: flex;
         flex-direction: column;
+        margin: 0;
+      }
+
+      header {
+        margin: 0 0 10px 0;
+      }
+
+      footer {
+        margin: 10px 0 0 0;
+      }
+
+      article {
+        margin: 0 10px;
+      }
+
+      #pageHeader,
+      #pageFooter {
+        flex: 0 1 auto;
+      }
+
+      #pageHeader {
+        min-height: 6.5%;
+      }
+
+      #pageFooter {
+        min-height: 4.5%;
       }
 
       #container {
+        flex: 1 2 auto;
+        display: flex;
+        flex-direction: row;
+      }
+
+      #mainNav,
+      #siteAds {
+        flex: 0 1 auto;
+        min-width: 17%;
+      }
+
+      #mainArticle {
+        flex: 1 2 auto;
         display: flex;
         flex-direction: column;
       }
 
-      article {
-        margin: 10px 0;
+      header,
+      footer,
+      article,
+      nav,
+      aside {
+        padding: 1.2em;
+        background: gold;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <header id="pageHeader" class="flex">Header</header>
-  <div id="container">
-    <nav id="mainNav" class="flex">Nav</nav>
-    <article id="mainArticle" class="flex">
-      Article
-    </article>
-    <aside id="siteAds" class="flex">Ads</aside>
-  </div>
-  <footer id="pageFooter" class="flex">Footer</footer>
-</body>
+      @media all and (max-width: 575px) {
+        body {
+          display: flex;
+          flex-direction: column;
+        }
 
+        #container {
+          display: flex;
+          flex-direction: column;
+        }
+
+        article {
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="pageHeader" class="flex">Header</header>
+    <div id="container">
+      <nav id="mainNav" class="flex">Nav</nav>
+      <article id="mainArticle" class="flex">Article</article>
+      <aside id="siteAds" class="flex">Ads</aside>
+    </div>
+    <footer id="pageFooter" class="flex">Footer</footer>
+  </body>
 </html>
